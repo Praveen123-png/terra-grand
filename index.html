@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terra Grand</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- data aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- funnel display font (heading)-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Mozilla+Text:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <!-- Montserrat font (sub heading)-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Text:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <!-- roboto font (content)-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Mozilla+Text:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:wght@100..900&family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="fixed w-screen mt-3 z-50">
+      <div
+        class="mx-auto bg-white/50 w-fit backdrop-blur-sm border border-amber-600 rounded-full px-4 sm:px-6 lg:px-8"
+      >
+        <div class="flex h-16 justify-center">
+          <div class="flex md:flex items-center mr-5">
+            <a class="block text-amber-600" href="./index.html">
+              <!-- <span class="sr-only">Home</span> -->
+              <!-- <svg
+                class="h-8"
+                viewBox="0 0 28 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.41 10.3847C1.14777 7.4194 2.85643 4.7861 5.2639 2.90424C7.6714 1.02234 10.6393 0 13.695 0C16.7507 0 19.7186 1.02234 22.1261 2.90424C24.5336 4.7861 26.2422 7.4194 26.98 10.3847H25.78C23.7557 10.3549 21.7729 10.9599 20.11 12.1147C20.014 12.1842 19.9138 12.2477 19.81 12.3047H19.67C19.5662 12.2477 19.466 12.1842 19.37 12.1147C17.6924 10.9866 15.7166 10.3841 13.695 10.3841C11.6734 10.3841 9.6976 10.9866 8.02 12.1147C7.924 12.1842 7.8238 12.2477 7.72 12.3047H7.58C7.4762 12.2477 7.376 12.1842 7.28 12.1147C5.6171 10.9599 3.6343 10.3549 1.61 10.3847H0.41ZM23.62 16.6547C24.236 16.175 24.9995 15.924 25.78 15.9447H27.39V12.7347H25.78C24.4052 12.7181 23.0619 13.146 21.95 13.9547C21.3243 14.416 20.5674 14.6649 19.79 14.6649C19.0126 14.6649 18.2557 14.416 17.63 13.9547C16.4899 13.1611 15.1341 12.7356 13.745 12.7356C12.3559 12.7356 11.0001 13.1611 9.86 13.9547C9.2343 14.416 8.4774 14.6649 7.7 14.6649C6.9226 14.6649 6.1657 14.416 5.54 13.9547C4.4144 13.1356 3.0518 12.7072 1.66 12.7347H0V15.9447H1.61C2.39051 15.924 3.154 16.175 3.77 16.6547C4.908 17.4489 6.2623 17.8747 7.65 17.8747C9.0377 17.8747 10.392 17.4489 11.53 16.6547C12.1468 16.1765 12.9097 15.9257 13.69 15.9447C14.4708 15.9223 15.2348 16.1735 15.85 16.6547C16.9901 17.4484 18.3459 17.8738 19.735 17.8738C21.1241 17.8738 22.4799 17.4484 23.62 16.6547ZM23.62 22.3947C24.236 21.915 24.9995 21.664 25.78 21.6847H27.39V18.4747H25.78C24.4052 18.4581 23.0619 18.886 21.95 19.6947C21.3243 20.156 20.5674 20.4049 19.79 20.4049C19.0126 20.4049 18.2557 20.156 17.63 19.6947C16.4899 18.9011 15.1341 18.4757 13.745 18.4757C12.3559 18.4757 11.0001 18.9011 9.86 19.6947C9.2343 20.156 8.4774 20.4049 7.7 20.4049C6.9226 20.4049 6.1657 20.156 5.54 19.6947C4.4144 18.8757 3.0518 18.4472 1.66 18.4747H0V21.6847H1.61C2.39051 21.664 3.154 21.915 3.77 22.3947C4.908 23.1889 6.2623 23.6147 7.65 23.6147C9.0377 23.6147 10.392 23.1889 11.53 22.3947C12.1468 21.9165 12.9097 21.6657 13.69 21.6847C14.4708 21.6623 15.2348 21.9135 15.85 22.3947C16.9901 23.1884 18.3459 23.6138 19.735 23.6138C21.1241 23.6138 22.4799 23.1884 23.62 22.3947Z"
+                  fill="currentColor"
+                />
+              </svg> -->
+              Terra Grand
+            </a>
+          </div>
+
+          <div class="md:flex md:items-center md:gap-12">
+            <nav aria-label="Global" class="hidden md:block">
+              <ul class="flex items-center gap-6 text-sm">
+                <li>
+                  <a
+                    class="block text-gray-700 bg-transparent active border border-transparent hover:border hover:border-amber-500 px-4 py-3 rounded-full transition duration-300 hover:text-black"
+                    href="./index.html"
+                  >
+                    Home
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="block text-gray-700 bg-transparent border border-transparent hover:border hover:border-amber-500 px-4 py-3 rounded-full transition duration-300 hover:text-black"
+                    href="./pages/about.html"
+                  >
+                    About
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="block text-gray-700 bg-transparent border border-transparent hover:border hover:border-amber-500 px-4 py-3 rounded-full transition duration-300 hover:text-black"
+                    href="./pages/serivces.html"
+                  >
+                    Services
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="block text-gray-700 bg-transparent border border-transparent hover:border hover:border-amber-500 px-4 py-3 rounded-full transition duration-300 hover:text-black"
+                    href="./pages/contact.html"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Hamburger button (mobile) -->
+          <div class="md:hidden flex items-center">
+            <button id="menu-btn" class="text-gray-700 focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="flex justify-center">
+        <nav
+          id="mobile-menu"
+          class="hidden rounded-xl w-fit text-center z-50 backdrop-blur-sm md:hidden mt-2 bg-white/50 rounded-lg p-4 space-y-2"
+        >
+          <a
+            href="./index.html"
+            class="block text-gray-700 active px-4 py-2 rounded hover:bg-amber-500 hover:text-white"
+            >Home</a
+          >
+          <a
+            href="./pages/about.html"
+            class="block text-gray-700 px-4 py-2 rounded hover:bg-amber-500 hover:text-white"
+            >About</a
+          >
+          <a
+            href="./pages/serivces.html"
+            class="block text-gray-700 px-4 py-2 rounded hover:bg-amber-500 hover:text-white"
+            >Services</a
+          >
+          <a
+            href="./pages/contact.html"
+            class="block text-gray-700 px-4 py-2 rounded hover:bg-amber-500 hover:text-white"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+    <!-- hero section -->
+
+    <!-- Experience Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-funnel-display text-4xl md:text-5xl font-bold text-black mb-4">
+            Over Two Decades of <span class="text-amber-500">Excellence</span>
+          </h2>
+          <p class="font-roboto text-xl text-gray-600 max-w-3xl mx-auto">
+            Since 2003, we've been building exceptional structures and lasting
+            relationships with our clients across California.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div
+            class="text-center bg-gray-200 py-6 rounded-2xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
+          >
+            <div class="text-4xl font-funnel-display font-bold text-amber-500 mb-2">
+              500+
+            </div>
+            <p class="font-montserrat font-semibold text-black">Projects Completed</p>
+          </div>
+          <div
+            class="text-center bg-gray-200 py-6 rounded-2xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
+          >
+            <div class="text-4xl font-funnel-display font-bold text-amber-500 mb-2">
+              20+
+            </div>
+            <p class="font-montserrat font-semibold text-black">Years Experience</p>
+          </div>
+          <div
+            class="text-center bg-gray-200 py-6 rounded-2xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
+          >
+            <div class="text-4xl font-funnel-display font-bold text-amber-500 mb-2">
+              98%
+            </div>
+            <p class="font-montserrat font-semibold text-black">Client Satisfaction</p>
+          </div>
+          <div
+            class="text-center bg-gray-200 py-6 rounded-2xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
+          >
+            <div class="text-4xl font-funnel-display font-bold text-amber-500 mb-2">
+              50+
+            </div>
+            <p class="font-montserrat font-semibold text-black">Expert Team Members</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- data aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script/index.js"></script>
+  </body>
+</html>

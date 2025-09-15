@@ -1,0 +1,24 @@
+/* html,
+body {
+    font-family: "Funnel Display", sans-serif;
+} */
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3,
+h4 {
+  font-family: "Funnel Display", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.active {
+  background-color: #F59E0B;
+  border-radius: 2rem;
+  color: white;
+}
