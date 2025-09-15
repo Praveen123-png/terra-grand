@@ -1,15 +1,15 @@
-/* html,
+html,
 body {
-    font-family: "Funnel Display", sans-serif;
-} */
+  overflow-x: clip;
+}
 
-h1,
-h2 {
+h4,
+h3 {
   font-family: "Montserrat", sans-serif;
 }
 
-h3,
-h4 {
+h2,
+h1 {
   font-family: "Funnel Display", sans-serif;
 }
 
@@ -22,3 +22,116 @@ p {
   border-radius: 2rem;
   color: white;
 }
+
+/* For Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none;
+  /* hides scrollbar */
+}
+
+/* For IE/Edge (legacy) */
+* {
+  -ms-overflow-style: none;
+}
+
+
+
+/* logo slider */
+.wrapper {
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 200px;
+  margin-top: 5rem;
+  overflow: hidden;
+  mask-image: linear-gradient(to right,
+      hsla(0, 0%, 0%, 0),
+      hsl(0, 0%, 0%) 20%,
+      hsl(0, 0%, 0%) 80%,
+      hsla(0, 0%, 0%, 0));
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+.item {
+  /* display: block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation: scrollLeft 30s linear infinite;
+}
+
+.logo-img {
+  height: 80px;
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+/* medal animation */
+.animation {
+  animation: bounce 4s linear infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+
+  33% {
+    transform: translateY(-20px);
+  }
+
+  66% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
