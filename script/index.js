@@ -158,44 +158,44 @@ function currentSlideIndex(n) {
   showSlide(slideIndex);
 }
 
-let startX = 0;
-let endX = 0;
-let startY = 0;
-let endY = 0;
-const sliderContainer = document.querySelector(".relative.h-screen");
+// let startX = 0;
+// let endX = 0;
+// let startY = 0;
+// let endY = 0;
+// const sliderContainer = document.querySelector(".relative.h-screen");
 
-sliderContainer.addEventListener("touchstart", function (e) {
-  startX = e.touches[0].clientX;
-  startY = e.touches[0].clientY;
-});
+// sliderContainer.addEventListener("touchstart", function (e) {
+//   startX = e.touches[0].clientX;
+//   startY = e.touches[0].clientY;
+// });
 
-sliderContainer.addEventListener(
-  "touchmove",
-  function (e) {
-    // Prevent default scrolling while swiping
-    e.preventDefault();
-  },
-  { passive: false }
-);
+// sliderContainer.addEventListener(
+//   "touchmove",
+//   function (e) {
+//     // Prevent default scrolling while swiping
+//     e.preventDefault();
+//   },
+//   { passive: false }
+// );
 
-sliderContainer.addEventListener("touchend", function (e) {
-  endX = e.changedTouches[0].clientX;
-  endY = e.changedTouches[0].clientY;
+// sliderContainer.addEventListener("touchend", function (e) {
+//   endX = e.changedTouches[0].clientX;
+//   endY = e.changedTouches[0].clientY;
 
-  // Calculate the difference
-  const diffX = startX - endX;
-  const diffY = startY - endY;
+//   // Calculate the difference
+//   const diffX = startX - endX;
+//   const diffY = startY - endY;
 
-  // Only trigger if horizontal swipe is greater than vertical (prevent interfering with scroll)
-  if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
-    if (diffX > 0) {
-      // Swipe left - next slide
-      nextSlide();
-    } else {
-      // Swipe right - previous slide
-      prevSlide();
-    }
-  }
-});
+//   // Only trigger if horizontal swipe is greater than vertical (prevent interfering with scroll)
+//   if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+//     if (diffX > 0) {
+//       // Swipe left - next slide
+//       nextSlide();
+//     } else {
+//       // Swipe right - previous slide
+//       prevSlide();
+//     }
+//   }
+// });
 
 setInterval(nextSlide, 5000);

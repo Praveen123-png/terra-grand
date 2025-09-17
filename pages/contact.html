@@ -151,7 +151,7 @@
       />
       <div class="absolute flex flex-col justify-center items-center">
         <h1
-          class="text-5xl md:text-6xl font-semibold lg:text-7xl z-[-1] text-center text-[#D4AF37]"
+          class="text-5xl md:text-6xl font-semibold lg:text-7xl z-[-1] text-center text-amber-500"
         >
           Get in Touch With Us
         </h1>
@@ -182,6 +182,7 @@
               <div class="bg-white border-2 border-amber-500 rounded-xl shadow-lg p-8">
                 <form id="contact-form" class="space-y-6">
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- name -->
                     <div>
                       <label
                         for="name"
@@ -192,12 +193,12 @@
                         type="text"
                         id="name"
                         name="name"
-                        required
                         class="w-full px-3 py-2 border border-gray-300 rounded-md font-roboto focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200"
                         placeholder="Enter your full name"
                       />
                     </div>
 
+                    <!-- email -->
                     <div>
                       <label
                         for="email"
@@ -208,7 +209,6 @@
                         type="email"
                         id="email"
                         name="email"
-                        required
                         class="w-full px-3 py-2 border border-gray-300 rounded-md font-roboto focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200"
                         placeholder="Enter your email"
                       />
@@ -216,6 +216,7 @@
                   </div>
 
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- phone -->
                     <div>
                       <label
                         for="phone"
@@ -223,7 +224,7 @@
                         >Phone Number <span class="text-red-500 text-lg">*</span></label
                       >
                       <input
-                        type="tel"
+                        type="number"
                         id="phone"
                         name="phone"
                         class="w-full px-3 py-2 border border-gray-300 rounded-md font-roboto focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200"
@@ -231,6 +232,7 @@
                       />
                     </div>
 
+                    <!-- projectType -->
                     <div>
                       <label
                         for="projectType"
@@ -240,7 +242,6 @@
                       <select
                         id="projectType"
                         name="projectType"
-                        required
                         class="w-full px-3 py-2 border border-gray-300 rounded-md font-roboto focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200"
                       >
                         <option value="">Select project type</option>
@@ -258,6 +259,7 @@
                     </div>
                   </div>
 
+                  <!-- message -->
                   <div>
                     <label
                       for="message"
@@ -268,24 +270,27 @@
                       id="message"
                       name="message"
                       rows="4"
-                      required
                       class="w-full px-3 py-2 border border-gray-300 rounded-md font-roboto focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200"
                       placeholder="Please describe your project, including size, location, special requirements, and any other details that would help us provide an accurate quote."
                     ></textarea>
                   </div>
 
                   <div>
-                    <h2 class="text-red-500 text-2xl text-center hidden warning-text">
+                    <h2
+                      class="text-red-500 text-2xl text-center"
+                      id="warning-text"
+                      style="display: none"
+                    >
                       * Please fill all the required details
                     </h2>
                   </div>
 
                   <button
-                    type="submit"
+                    type="button"
+                    id="submitForm"
                     class="w-full bg-white hover:cursor-pointer text-black border-2 hover:text-white border-amber-500 hover:bg-amber-500 font-montserrat font-semibold text-lg py-3 rounded-lg transition-colors inline-flex items-center justify-center"
                   >
                     Send Message
-                    <i data-lucide="send" class="w-5 h-5 ml-2"></i>
                   </button>
                 </form>
               </div>
@@ -472,7 +477,7 @@
                 </div>
               </div>
 
-              <div data-aos="fade-down">
+              <!-- <div data-aos="fade-down">
                 <div
                   class="bg-gray-200/75 border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
                 >
@@ -528,7 +533,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
 
             <!-- Social Media -->
@@ -1102,6 +1107,6 @@
 
     <!-- data aos animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../script/index.js"></script>
+    <script src="../script/contact.js"></script>
   </body>
 </html>
