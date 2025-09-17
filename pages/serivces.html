@@ -142,53 +142,498 @@
       </div>
     </header>
 
-    <!-- some random section -->
-    <div id="services-page" class="page ">
-      <!-- Hero Section -->
-      <section
-        class="relative h-96 flex items-center justify-center bg-cover bg-center pt-16"
-        style="
-          background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-            url('https://images.unsplash.com/photo-1636367393690-1f07c7413851?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwYnVpbGRpbmd8ZW58MXx8fHwxNzU3ODc1NDg4fDA&ixlib=rb-4.1.0&q=80&w=1080');
-        "
-      >
-        <div class="text-center text-white max-w-4xl mx-auto px-4">
-          <h1 class="font-funnel-display text-5xl md:text-6xl font-bold mb-4">
-            Our <span class="text-gold">Services</span>
-          </h1>
-          <p class="font-roboto text-xl md:text-2xl text-gray-200">
-            Comprehensive construction solutions tailored to your needs
+    <!-- Services Overview -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-funnel-display text-4xl md:text-5xl font-bold text-black mb-4">
+            What We <span class="text-gold">Build</span>
+          </h2>
+          <p class="font-roboto text-xl text-gray-600 max-w-3xl mx-auto">
+            From residential homes to commercial buildings, we offer complete construction
+            services with unmatched quality and attention to detail.
           </p>
         </div>
-      </section>
 
-      <!-- CTA Section -->
-      <section class="py-20 bg-gold text-black">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 class="font-funnel-display text-4xl md:text-5xl font-bold mb-6">
-            Ready to Start Your Project?
-          </h2>
-          <p class="font-roboto text-xl mb-8">
-            Get a free consultation and detailed quote for your construction project
-            today.
-          </p>
-          <div class="space-x-4">
-            <button
-              data-page="contact"
-              class="bg-black text-white hover:bg-gray-800 font-montserrat font-semibold text-lg px-8 py-3 rounded-lg transition-colors"
-            >
-              Get Free Quote
-            </button>
-            <button
-              data-page="about"
-              class="border-black text-black hover:bg-black hover:text-white font-montserrat font-semibold text-lg px-8 py-3 border-2 rounded-lg transition-colors"
-            >
-              Learn More About Us
-            </button>
+        <div class="space-y-16">
+          <!-- Service 1: Residential Construction -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="text-gold mb-6">
+                <i data-lucide="home" class="w-12 h-12"></i>
+              </div>
+              <h3
+                class="font-funnel-display text-3xl md:text-4xl font-bold text-black mb-4"
+              >
+                Residential Construction
+              </h3>
+              <p class="font-roboto text-lg text-gray-600 mb-6">
+                Custom homes built to your exact specifications with premium materials and
+                expert craftsmanship.
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700"
+                    >Custom home design and planning</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">New home construction</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Luxury home building</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700"
+                    >Energy-efficient construction</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Smart home integration</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700"
+                    >Sustainable building practices</span
+                  >
+                </li>
+              </ul>
+              <button
+                class="bg-gold text-black hover:bg-yellow-500 font-montserrat font-semibold px-6 py-3 rounded-lg transition-colors inline-flex items-center"
+              >
+                Get Quote
+                <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+              </button>
+            </div>
+            <div class="service-card">
+              <img
+                src="https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsdXh1cnklMjBob3VzZSUyMGV4dGVyaW9yfGVufDF8fHx8MTc1Nzg2NTg4NHww&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Residential Construction"
+                class="w-full h-96 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              />
+            </div>
+          </div>
+
+          <!-- Service 2: Commercial Building -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:grid-flow-col-dense"
+          >
+            <div class="lg:col-start-2">
+              <div class="text-gold mb-6">
+                <i data-lucide="building" class="w-12 h-12"></i>
+              </div>
+              <h3
+                class="font-funnel-display text-3xl md:text-4xl font-bold text-black mb-4"
+              >
+                Commercial Building
+              </h3>
+              <p class="font-roboto text-lg text-gray-600 mb-6">
+                Professional commercial construction services for businesses, offices, and
+                industrial facilities.
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700"
+                    >Office building construction</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Retail space development</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700"
+                    >Industrial facility building</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Warehouse construction</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Restaurant build-outs</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Multi-unit residential</span>
+                </li>
+              </ul>
+              <button
+                class="bg-gold text-black hover:bg-yellow-500 font-montserrat font-semibold px-6 py-3 rounded-lg transition-colors inline-flex items-center"
+              >
+                Get Quote
+                <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+              </button>
+            </div>
+            <div class="lg:col-start-1 service-card">
+              <img
+                src="https://images.unsplash.com/photo-1636367393690-1f07c7413851?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwYnVpbGRpbmd8ZW58MXx8fHwxNzU3ODc1NDg4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Commercial Building"
+                class="w-full h-96 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              />
+            </div>
+          </div>
+
+          <!-- Service 3: Renovations & Remodeling -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="text-gold mb-6">
+                <i data-lucide="paint-bucket" class="w-12 h-12"></i>
+              </div>
+              <h3
+                class="font-funnel-display text-3xl md:text-4xl font-bold text-black mb-4"
+              >
+                Renovations & Remodeling
+              </h3>
+              <p class="font-roboto text-lg text-gray-600 mb-6">
+                Transform your existing space with our comprehensive renovation and
+                remodeling services.
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Kitchen remodeling</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Bathroom renovations</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Whole house renovations</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Room additions</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Basement finishing</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Historic restoration</span>
+                </li>
+              </ul>
+              <button
+                class="bg-gold text-black hover:bg-yellow-500 font-montserrat font-semibold px-6 py-3 rounded-lg transition-colors inline-flex items-center"
+              >
+                Get Quote
+                <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+              </button>
+            </div>
+            <div class="service-card">
+              <img
+                src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzU3ODgzMjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Renovations & Remodeling"
+                class="w-full h-96 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              />
+            </div>
+          </div>
+
+          <!-- Service 4: Design & Planning -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:grid-flow-col-dense"
+          >
+            <div class="lg:col-start-2">
+              <div class="text-gold mb-6">
+                <i data-lucide="hammer" class="w-12 h-12"></i>
+              </div>
+              <h3
+                class="font-funnel-display text-3xl md:text-4xl font-bold text-black mb-4"
+              >
+                Design & Planning
+              </h3>
+              <p class="font-roboto text-lg text-gray-600 mb-6">
+                Comprehensive architectural design and construction planning services for
+                all project types.
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Architectural design</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700"
+                    >3D modeling and visualization</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Construction planning</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Permit acquisition</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700"
+                    >Site planning and analysis</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Cost estimation</span>
+                </li>
+              </ul>
+              <button
+                class="bg-gold text-black hover:bg-yellow-500 font-montserrat font-semibold px-6 py-3 rounded-lg transition-colors inline-flex items-center"
+              >
+                Get Quote
+                <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+              </button>
+            </div>
+            <div class="lg:col-start-1 service-card">
+              <img
+                src="https://images.unsplash.com/photo-1603444796699-c29543ccdfb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3VzZSUyMGNvbnN0cnVjdGlvbiUyMGZyYW1pbmd8ZW58MXx8fHwxNzU3OTE5Mzg4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Design & Planning"
+                class="w-full h-96 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              />
+            </div>
+          </div>
+
+          <!-- Service 5: Specialty Services -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="text-gold mb-6">
+                <i data-lucide="wrench" class="w-12 h-12"></i>
+              </div>
+              <h3
+                class="font-funnel-display text-3xl md:text-4xl font-bold text-black mb-4"
+              >
+                Specialty Services
+              </h3>
+              <p class="font-roboto text-lg text-gray-600 mb-6">
+                Specialized construction services including plumbing, electrical, and HVAC
+                installations.
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700"
+                    >Plumbing installation and repair</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Electrical systems</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">HVAC installation</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Roofing services</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Concrete work</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Structural repairs</span>
+                </li>
+              </ul>
+              <button
+                class="bg-gold text-black hover:bg-yellow-500 font-montserrat font-semibold px-6 py-3 rounded-lg transition-colors inline-flex items-center"
+              >
+                Get Quote
+                <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+              </button>
+            </div>
+            <div class="service-card">
+              <img
+                src="https://images.unsplash.com/photo-1634231647709-06609f7dd3ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjB3b3JrZXJzJTIwYnVpbGRpbmd8ZW58MXx8fHwxNzU3OTMwMjkzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Specialty Services"
+                class="w-full h-96 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              />
+            </div>
+          </div>
+
+          <!-- Service 6: Green Building -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:grid-flow-col-dense"
+          >
+            <div class="lg:col-start-2">
+              <div class="text-gold mb-6">
+                <i data-lucide="tree-pine" class="w-12 h-12"></i>
+              </div>
+              <h3
+                class="font-funnel-display text-3xl md:text-4xl font-bold text-black mb-4"
+              >
+                Green Building
+              </h3>
+              <p class="font-roboto text-lg text-gray-600 mb-6">
+                Sustainable and eco-friendly construction practices for environmentally
+                responsible building.
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700"
+                    >LEED certified construction</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Solar panel installation</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Energy-efficient systems</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Sustainable materials</span>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700"
+                    >Water conservation systems</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check-circle"
+                    class="w-5 h-5 text-gold mr-3 flex-shrink-0"
+                  ></i>
+                  <span class="font-roboto text-gray-700">Green roof installation</span>
+                </li>
+              </ul>
+              <button
+                class="bg-gold text-black hover:bg-yellow-500 font-montserrat font-semibold px-6 py-3 rounded-lg transition-colors inline-flex items-center"
+              >
+                Get Quote
+                <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+              </button>
+            </div>
+            <div class="lg:col-start-1 service-card">
+              <img
+                src="https://images.unsplash.com/photo-1676065701219-3c0c64a4eba5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNpZGVudGlhbCUyMGhvbWUlMjBleHRlcmlvcnxlbnwxfHx8fDE3NTc5MzAyOTN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Green Building"
+                class="w-full h-96 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              />
+            </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <!-- footer -->
     <footer class="bg-[url(../img/footer-bg.jpg)] bg-cover bg-center m-5 rounded-xl">
