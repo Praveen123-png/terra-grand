@@ -130,65 +130,763 @@
           >
           <a
             href="./serivces.html"
-            class="block text-gray-700 px-4 py-2 rounded hover:bg-amber-500 hover:text-white"
+            class="block text-gray-700 px-4 py-2 active rounded hover:bg-amber-500 hover:text-white"
             >Services</a
           >
           <a
             href="./contact.html"
-            class="block text-gray-700 px-4 py-2 active rounded hover:bg-amber-500 hover:text-white"
+            class="block text-gray-700 px-4 py-2  rounded hover:bg-amber-500 hover:text-white"
             >Contact</a
           >
         </nav>
       </div>
     </header>
 
-    <!-- some random section -->
-    <div id="services-page" class="page ">
-      <!-- Hero Section -->
-      <section
-        class="relative h-96 flex items-center justify-center bg-cover bg-center pt-16"
-        style="
-          background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-            url('https://images.unsplash.com/photo-1636367393690-1f07c7413851?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwYnVpbGRpbmd8ZW58MXx8fHwxNzU3ODc1NDg4fDA&ixlib=rb-4.1.0&q=80&w=1080');
-        "
-      >
-        <div class="text-center text-white max-w-4xl mx-auto px-4">
-          <h1 class="font-funnel-display text-5xl md:text-6xl font-bold mb-4">
-            Our <span class="text-gold">Services</span>
-          </h1>
-          <p class="font-roboto text-xl md:text-2xl text-gray-200">
-            Comprehensive construction solutions tailored to your needs
+    <!-- hero section -->
+    <div class="h-[700px] w-full relative flex flex-col justify-center items-center">
+      <img
+        src="../img/service-hero.jpg"
+        alt=""
+        class="h-full w-full object-cover brightness-50 z-[-3]"
+      />
+      <div class="absolute flex flex-col justify-center items-center">
+        <h1
+          class="text-5xl md:text-6xl font-semibold lg:text-7xl z-[-1] text-center text-[#D4AF37]"
+        >
+          Our Services, Your Solutions
+        </h1>
+        <p
+          class="text-lg md:text-lg lg:text-xl text-white mt-5 mx-5 z-[-1] max-w-[750px] text-center"
+        >
+          We deliver reliable, high-quality services tailored to your needs — combining
+          expertise, innovation, and commitment to ensure lasting results.
+        </p>
+      </div>
+    </div>
+
+    <!-- Services Overview -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-funnel-display text-4xl md:text-5xl font-bold text-black mb-4">
+            What We <span class="text-amber-500">Build</span>
+          </h2>
+          <p class="font-roboto text-xl text-gray-600 max-w-3xl mx-auto">
+            From residential homes to commercial buildings, we offer complete construction
+            services with unmatched quality and attention to detail.
           </p>
         </div>
-      </section>
 
-      <!-- CTA Section -->
-      <section class="py-20 bg-gold text-black">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 class="font-funnel-display text-4xl md:text-5xl font-bold mb-6">
-            Ready to Start Your Project?
-          </h2>
-          <p class="font-roboto text-xl mb-8">
-            Get a free consultation and detailed quote for your construction project
-            today.
-          </p>
-          <div class="space-x-4">
-            <button
-              data-page="contact"
-              class="bg-black text-white hover:bg-gray-800 font-montserrat font-semibold text-lg px-8 py-3 rounded-lg transition-colors"
+        <div class="space-y-16">
+          <!-- Service 1: Residential Construction -->
+          <div data-aos="fade-right">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-gray-200 hover:-translate-y-1 hover:shadow-xl shadow-md transition-all duration-200 p-4 rounded-2xl"
             >
-              Get Free Quote
-            </button>
-            <button
-              data-page="about"
-              class="border-black text-black hover:bg-black hover:text-white font-montserrat font-semibold text-lg px-8 py-3 border-2 rounded-lg transition-colors"
+              <div class="ml-6 mb-6">
+                <div class="text-gold mb-6">
+                  <i data-lucide="home" class="w-12 h-12"></i>
+                </div>
+                <h2
+                  class="font-funnel-display text-3xl md:text-4xl font-bold text-amber-500 mb-4"
+                >
+                  Residential Construction
+                </h2>
+                <p class="font-roboto text-lg text-gray-600 mb-6">
+                  Custom homes built to your exact specifications with premium materials
+                  and expert craftsmanship.
+                </p>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['01'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700"
+                      >Custom home design and planning</span
+                    >
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['02'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">New home construction</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['03'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Luxury home building</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['04'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700"
+                      >Energy-efficient construction</span
+                    >
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['05'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Smart home integration</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['06'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700"
+                      >Sustainable building practices</span
+                    >
+                  </li>
+                </ul>
+                <a
+                  class="group relative inline-flex items-center overflow-hidden rounded-sm border border-current px-8 py-3 bg-amber-500 text-white focus:ring-2 focus:ring-black/50 focus:outline-hidden"
+                  href="./contact.html"
+                >
+                  <span class="absolute -start-full transition-all group-hover:start-4">
+                    <svg
+                      class="size-5 rtl:rotate-180"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </span>
+
+                  <span class="text-sm font-medium transition-all group-hover:ms-4">
+                    Get Quote
+                  </span>
+                </a>
+              </div>
+
+              <div class="service-card lg:mr-7 overflow-hidden rounded-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsdXh1cnklMjBob3VzZSUyMGV4dGVyaW9yfGVufDF8fHx8MTc1Nzg2NTg4NHww&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Residential Construction"
+                  class="w-full hover:scale-104 h-96 object-cover rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2: Commercial Building -->
+          <div data-aos="fade-down">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:grid-flow-col-dense bg-gray-200 hover:-translate-y-1 hover:shadow-xl shadow-md transition-all duration-200 p-4 rounded-2xl"
             >
-              Learn More About Us
-            </button>
+              <div class="lg:col-start-2 ml-6 mb-6">
+                <div class="text-gold mb-6">
+                  <i data-lucide="building" class="w-12 h-12"></i>
+                </div>
+                <h2
+                  class="font-funnel-display text-3xl md:text-4xl font-bold text-amber-500 mb-4"
+                >
+                  Commercial Building
+                </h2>
+                <p class="font-roboto text-lg text-gray-600 mb-6">
+                  Professional commercial construction services for businesses, offices,
+                  and industrial facilities.
+                </p>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['01'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700"
+                      >Office building construction</span
+                    >
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['02'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700"
+                      >Retail space development</span
+                    >
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['03'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700"
+                      >Industrial facility building</span
+                    >
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['04'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Warehouse construction</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['05'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Restaurant build-outs</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['06'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Multi-unit residential</span>
+                  </li>
+                </ul>
+                <a
+                  class="group relative inline-flex items-center overflow-hidden rounded-sm border border-current px-8 py-3 bg-amber-500 text-white focus:ring-2 focus:ring-black/50 focus:outline-hidden"
+                  href="./contact.html"
+                >
+                  <span class="absolute -start-full transition-all group-hover:start-4">
+                    <svg
+                      class="size-5 rtl:rotate-180"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </span>
+
+                  <span class="text-sm font-medium transition-all group-hover:ms-4">
+                    Get Quote
+                  </span>
+                </a>
+              </div>
+
+              <div class="lg:col-start-1 service-card lg:ml-7 overflow-hidden rounded-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1636367393690-1f07c7413851?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwYnVpbGRpbmd8ZW58MXx8fHwxNzU3ODc1NDg4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Commercial Building"
+                  class="w-full hover:scale-104 h-96 object-cover rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3: Renovations & Remodeling -->
+          <div data-aos="fade-left">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-gray-200 hover:-translate-y-1 hover:shadow-xl shadow-md transition-all duration-200 p-4 rounded-2xl"
+            >
+              <div class="ml-6 mb-6">
+                <div class="text-gold mb-6">
+                  <i data-lucide="paint-bucket" class="w-12 h-12"></i>
+                </div>
+                <h2
+                  class="font-funnel-display text-3xl md:text-4xl font-bold text-amber-500 mb-4"
+                >
+                  Renovations & Remodeling
+                </h2>
+                <p class="font-roboto text-lg text-gray-600 mb-6">
+                  Transform your existing space with our comprehensive renovation and
+                  remodeling services.
+                </p>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['01'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Kitchen remodeling</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['02'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Bathroom renovations</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['03'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Whole house renovations</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['04'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Room additions</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['05'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Basement finishing</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['06'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Historic restoration</span>
+                  </li>
+                </ul>
+                <a
+                  class="group relative inline-flex items-center overflow-hidden rounded-sm border border-current px-8 py-3 bg-amber-500 text-white focus:ring-2 focus:ring-black/50 focus:outline-hidden"
+                  href="./contact.html"
+                >
+                  <span class="absolute -start-full transition-all group-hover:start-4">
+                    <svg
+                      class="size-5 rtl:rotate-180"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </span>
+
+                  <span class="text-sm font-medium transition-all group-hover:ms-4">
+                    Get Quote
+                  </span>
+                </a>
+              </div>
+
+              <div class="service-card lg:mr-7 overflow-hidden rounded-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzU3ODgzMjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Renovations & Remodeling"
+                  class="w-full hover:scale-104 h-96 object-cover rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4: Design & Planning -->
+          <div data-aos="fade-right">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:grid-flow-col-dense bg-gray-200 hover:-translate-y-1 hover:shadow-xl shadow-md transition-all duration-200 p-4 rounded-2xl"
+            >
+              <div class="lg:col-start-2 ml-6 mb-6">
+                <div class="text-gold mb-6">
+                  <i data-lucide="hammer" class="w-12 h-12"></i>
+                </div>
+                <h2
+                  class="font-funnel-display text-3xl md:text-4xl font-bold text-amber-500 mb-4"
+                >
+                  Design & Planning
+                </h2>
+                <p class="font-roboto text-lg text-gray-600 mb-6">
+                  Comprehensive architectural design and construction planning services
+                  for all project types.
+                </p>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['01'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Architectural design</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['02'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700"
+                      >3D modeling and visualization</span
+                    >
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['03'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Construction planning</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['04'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Permit acquisition</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['05'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700"
+                      >Site planning and analysis</span
+                    >
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['06'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Cost estimation</span>
+                  </li>
+                </ul>
+                <a
+                  class="group relative inline-flex items-center overflow-hidden rounded-sm border border-current px-8 py-3 bg-amber-500 text-white focus:ring-2 focus:ring-black/50 focus:outline-hidden"
+                  href="./contact.html"
+                >
+                  <span class="absolute -start-full transition-all group-hover:start-4">
+                    <svg
+                      class="size-5 rtl:rotate-180"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </span>
+
+                  <span class="text-sm font-medium transition-all group-hover:ms-4">
+                    Get Quote
+                  </span>
+                </a>
+              </div>
+
+              <div class="lg:col-start-1 service-card lg:ml-7 overflow-hidden rounded-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1603444796699-c29543ccdfb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3VzZSUyMGNvbnN0cnVjdGlvbiUyMGZyYW1pbmd8ZW58MXx8fHwxNzU3OTE5Mzg4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Design & Planning"
+                  class="w-full hover:scale-104 h-96 object-cover rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5: Specialty Services -->
+          <div data-aos="fade-down">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-gray-200 hover:-translate-y-1 hover:shadow-xl shadow-md transition-all duration-200 p-4 rounded-2xl"
+            >
+              <div class="ml-6 mb-6">
+                <div class="text-gold mb-6">
+                  <i data-lucide="wrench" class="w-12 h-12"></i>
+                </div>
+                <h2
+                  class="font-funnel-display text-3xl md:text-4xl font-bold text-amber-500 mb-4"
+                >
+                  Specialty Services
+                </h2>
+                <p class="font-roboto text-lg text-gray-600 mb-6">
+                  Specialized construction services including plumbing, electrical, and
+                  HVAC installations.
+                </p>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['01'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700"
+                      >Plumbing installation and repair</span
+                    >
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['02'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Electrical systems</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['03'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">HVAC installation</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['04'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Roofing services</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['05'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Concrete work</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['06'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Structural repairs</span>
+                  </li>
+                </ul>
+                <a
+                  class="group relative inline-flex items-center overflow-hidden rounded-sm border border-current px-8 py-3 bg-amber-500 text-white focus:ring-2 focus:ring-black/50 focus:outline-hidden"
+                  href="./contact.html"
+                >
+                  <span class="absolute -start-full transition-all group-hover:start-4">
+                    <svg
+                      class="size-5 rtl:rotate-180"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </span>
+
+                  <span class="text-sm font-medium transition-all group-hover:ms-4">
+                    Get Quote
+                  </span>
+                </a>
+              </div>
+
+              <div class="service-card lg:mr-7 overflow-hidden rounded-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1634231647709-06609f7dd3ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjB3b3JrZXJzJTIwYnVpbGRpbmd8ZW58MXx8fHwxNzU3OTMwMjkzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Specialty Services"
+                  class="w-full h-96 hover:scale-104 object-cover rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6: Green Building -->
+          <div data-aos="fade-left">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:grid-flow-col-dense bg-gray-200 hover:-translate-y-1 hover:shadow-xl shadow-md transition-all duration-200 p-4 rounded-2xl"
+            >
+              <div class="lg:col-start-2 ml-6 mb-6">
+                <div class="text-gold mb-6">
+                  <i data-lucide="tree-pine" class="w-12 h-12"></i>
+                </div>
+                <h2
+                  class="font-funnel-display text-3xl md:text-4xl font-bold text-amber-500 mb-4"
+                >
+                  Green Building
+                </h2>
+                <p class="font-roboto text-lg text-gray-600 mb-6">
+                  Sustainable and eco-friendly construction practices for environmentally
+                  responsible building.
+                </p>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['01'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700"
+                      >LEED certified construction</span
+                    >
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['02'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700"
+                      >Solar panel installation</span
+                    >
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['03'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700"
+                      >Energy-efficient systems</span
+                    >
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['04'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Sustainable materials</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['05'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700"
+                      >Water conservation systems</span
+                    >
+                  </li>
+                  <li class="flex items-center">
+                    <i
+                      data-lucide="check-circle"
+                      class="w-5 h-5 text-gold mr-3 flex-shrink-0 relative before:absolute before:content-['06'] before:-top-1 before:-left-1 before:text-white before:bg-amber-500 before:rounded-full before:p-1 before:font-bold before:px-1.5"
+                    ></i>
+                    <span class="font-roboto text-gray-700">Green roof installation</span>
+                  </li>
+                </ul>
+                <a
+                  class="group relative inline-flex items-center overflow-hidden rounded-sm border border-current px-8 py-3 bg-amber-500 text-white focus:ring-2 focus:ring-black/50 focus:outline-hidden"
+                  href="./contact.html"
+                >
+                  <span class="absolute -start-full transition-all group-hover:start-4">
+                    <svg
+                      class="size-5 rtl:rotate-180"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </span>
+
+                  <span class="text-sm font-medium transition-all group-hover:ms-4">
+                    Get Quote
+                  </span>
+                </a>
+              </div>
+
+              <div class="lg:col-start-1 service-card lg:ml-7 overflow-hidden rounded-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1676065701219-3c0c64a4eba5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNpZGVudGlhbCUyMGhvbWUlMjBleHRlcmlvcnxlbnwxfHx8fDE3NTc5MzAyOTN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Green Building"
+                  class="w-full h-96 hover:scale-104 object-cover rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-down">
+          <h2 class="font-funnel-display text-4xl md:text-5xl font-bold text-black mb-4">
+            Our <span class="text-amber-500">Process</span>
+          </h2>
+          <p class="font-roboto text-xl text-gray-600">
+            A streamlined approach to deliver exceptional results
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Process Step 1 -->
+          <div data-aos="fade-right">
+            <div
+              class="process-card min-h-[242px] bg-white border border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow"
+            >
+              <div class="text-4xl font-funnel-display font-bold text-amber-500 mb-4">
+                01
+              </div>
+              <h3 class="font-montserrat font-semibold text-lg text-black mb-3">
+                Consultation & Planning
+              </h3>
+              <p class="font-roboto text-gray-600">
+                Initial meeting to understand your vision, requirements, and budget
+                constraints.
+              </p>
+            </div>
+          </div>
+
+          <!-- Process Step 2 -->
+          <div data-aos="fade-down">
+            <div
+              class="process-card min-h-[242px] bg-white border border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow"
+            >
+              <div class="text-4xl font-funnel-display font-bold text-amber-500 mb-4">
+                02
+              </div>
+              <h3 class="font-montserrat font-semibold text-lg text-black mb-3">
+                Design & Permits
+              </h3>
+              <p class="font-roboto text-gray-600">
+                Creating detailed plans and securing all necessary permits and approvals.
+              </p>
+            </div>
+          </div>
+
+          <!-- Process Step 3 -->
+          <div data-aos="fade-down">
+            <div
+              class="process-card min-h-[242px] bg-white border border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow"
+            >
+              <div class="text-4xl font-funnel-display font-bold text-amber-500 mb-4">
+                03
+              </div>
+              <h3 class="font-montserrat font-semibold text-lg text-black mb-3">
+                Construction
+              </h3>
+              <p class="font-roboto text-gray-600">
+                Expert execution with regular updates and quality control throughout the
+                build.
+              </p>
+            </div>
+          </div>
+
+          <!-- Process Step 4 -->
+          <div data-aos="fade-left">
+            <div
+              class="process-card min-h-[242px] bg-white border border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow"
+            >
+              <div class="text-4xl font-funnel-display font-bold text-amber-500 mb-4">
+                04
+              </div>
+              <h3 class="font-montserrat font-semibold text-lg text-black mb-3">
+                Final Inspection
+              </h3>
+              <p class="font-roboto text-gray-600">
+                Thorough inspection and walkthrough to ensure everything meets our high
+                standards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- footer -->
     <footer class="bg-[url(../img/footer-bg.jpg)] bg-cover bg-center m-5 rounded-xl">
@@ -463,12 +1161,12 @@
               <ul class="mt-8 space-y-4 text-sm">
                 <li>
                   <a
-                    class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                    class="flex items-center sm:justify-start justify-center gap-2"
                     href="#"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5 shrink-0 text-gray-900 shadow-sm dark:text-white"
+                      class="size-5 shrink-0 shadow-sm text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -480,18 +1178,17 @@
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
-
-                    <span
-                      class="flex-1 text-white hover:text-amber-500 transition-all duration-200 dark:text-gray-300"
+                    <p
+                      class="flex font-bold !inline-block w-fit text-white hover:text-amber-500 transition-all duration-200 dark:text-gray-300"
                     >
                       info@terragrand.com
-                    </span>
+                    </p>
                   </a>
                 </li>
 
                 <li>
                   <a
-                    class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                    class="flex items-center sm:justify-start justify-center gap-2"
                     href="#"
                   >
                     <svg
@@ -509,41 +1206,46 @@
                       />
                     </svg>
 
-                    <span
-                      class="flex-1 text-white hover:text-amber-500 transition-all duration-200 dark:text-gray-300"
-                      >0123456789</span
+                    <p
+                      class="flex font-bold text-white hover:text-amber-500 transition-all duration-200 dark:text-gray-300"
                     >
+                      0123456789
+                    </p>
                   </a>
                 </li>
 
                 <li
                   class="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="size-5 shrink-0 text-gray-900 shadow-sm dark:text-white"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-
-                  <address
-                    class="-mt-0.5 flex-1 text-white hover:text-amber-500 transition-all duration-200 dark:text-gray-300"
-                  >
-                    213 Lane, London, United Kingdom
-                  </address>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="size-5 shrink-0 text-gray-900 shadow-sm dark:text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    <p
+                      class="-mt-0.5 font-bold flex-1 text-white hover:text-amber-500 transition-all duration-200 dark:text-gray-300"
+                    >
+                      213 Lane, London, United Kingdom
+                    </p>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -584,5 +1286,6 @@
 
     <!-- data aos animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script/index.js"></script>
   </body>
 </html>
