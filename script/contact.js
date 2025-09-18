@@ -30,3 +30,32 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 console.log("js file loaded successfully");
+
+// service packages slider
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.querySelector("#cards"); // change selector if needed
+  const prev = document.querySelector(".slider-prev");
+  const next = document.querySelector(".slider-next");
+
+  if (!container || !prev || !next) return;
+
+  const scrollAmount = container.clientWidth * 0.6;
+
+  prev.addEventListener("click", () => {
+    container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+  });
+
+  next.addEventListener("click", () => {
+    container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  });
+
+  // Optional: disable arrows at ends
+  const updateButtons = () => {
+    prev.disabled = container.scrollLeft <= 0;
+    next.disabled =
+      Math.ceil(container.scrollLeft + container.clientWidth) >= container.scrollWidth;
+  };
+  container.addEventListener("scroll", updateButtons);
+  window.addEventListener("resize", updateButtons);
+  updateButtons();
+});
